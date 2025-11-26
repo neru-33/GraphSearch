@@ -2,7 +2,7 @@
 #include "LinkedList.h"
 #include "Stack.h"
 #include "Queue.h"
-#include "adjacencyMatrix.h"
+#include "adjMat.h"
 
 
 /*

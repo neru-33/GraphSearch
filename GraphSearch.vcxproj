@@ -123,14 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="adjacencyMatrix.c" />
-    <ClCompile Include="GraphSearch.c" />
+    <ClCompile Include="adjMat.c" />
+    <ClCompile Include="Main.c" />
     <ClCompile Include="LinkedList.c" />
     <ClCompile Include="Queue.c" />
     <ClCompile Include="Stack.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="adjacencyMatrix.h" />
+    <ClInclude Include="adjMat.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="Stack.h" />

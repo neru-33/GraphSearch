@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GraphSearch.c">
+    <ClCompile Include="Main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="LinkedList.c">
@@ -27,7 +27,7 @@
     <ClCompile Include="Queue.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="adjacencyMatrix.c">
+    <ClCompile Include="adjMat.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,7 +41,7 @@
     <ClInclude Include="Queue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="adjacencyMatrix.h">
+    <ClInclude Include="adjMat.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
