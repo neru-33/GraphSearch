@@ -34,7 +34,7 @@ void adjmat_dfs(int G[][7], int r) {
 			visited[v] = 1;
 			printf("adjacency matrix dfs visit %d\n", v);
 			for (int i = 0; i < 7; i++) {
-				if (G[v][i] != 0 && !visited[G[v][i]])
+				if (G[v][i] != 0 && !visited[i])
 					stack_push(S, i);
 			}
 		}

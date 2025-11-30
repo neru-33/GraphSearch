@@ -1,7 +1,7 @@
 #pragma once
 
 typedef struct Node {
-	int V;
+	int v;
 	struct Node* next;
 }Node;
 
@@ -12,6 +12,6 @@ typedef struct LinkedList {
 
 LinkedList* init_list();
 
-Node* make_node(int V);
+Node* make_node(int v);
 
-void linked_insert(LinkedList* L, int V);
+void linked_insert(LinkedList* L, int v);

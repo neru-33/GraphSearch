@@ -4,7 +4,6 @@
 #include "Queue.h"
 #include "adjMat.h"
 
-
 /*
 	정점의 방문 여부를 기록하는 배열입니다.
 	0 = 방문하지 않음. 1 = 방문함
@@ -55,8 +54,8 @@ void dfs(LinkedList* G[], int r) {
 			//여기에서는 알고리즘의 효율성을 위해 이미 방문한 정점은 push하지 않습니다.
 			Node* p = G[v]->head;
 			while (p != NULL) {
-				if(!visited[p->V])
-					stack_push(S, p->V);
+				if(!visited[p->v])
+					stack_push(S, p->v);
 				p = p->next;
 			}
 		}
@@ -87,8 +86,8 @@ void dfs_recursion(LinkedList* G[], int r) {
 	//역시 효율성을 위해 이미 방문한 정점에 대해서는 dfs를 수행하지 않습니다.
 	Node* p = G[r]->head;
 	while (p != NULL) {
-		if(!visited[p->V])
-			dfs_recursion(G, p->V);
+		if(!visited[p->v])
+			dfs_recursion(G, p->v);
 		p = p->next;
 	}
 }
@@ -132,8 +131,8 @@ void bfs(LinkedList* G[], int r) {
 			//해당 정점의 모든 인접 정점을 큐에 enqueue합니다.
 			Node* p = G[v]->head;
 			while (p != NULL) {
-				if (!visited[p->V])
-					enqueue(Q, p->V);
+				if (!visited[p->v])
+					enqueue(Q, p->v);
 				p = p->next;
 			}
 		}

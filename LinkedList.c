@@ -9,15 +9,15 @@ LinkedList* init_list() {
 }
 
 
-Node* make_node(int V) {
+Node* make_node(int v) {
 	Node* N = (Node*)malloc(sizeof(Node));
-	N->V = V;
+	N->v = v;
 	N->next = NULL;
 	return N;
 }
 
-void linked_insert(LinkedList* L, int V) {
-	Node* N = make_node(V);
+void linked_insert(LinkedList* L, int v) {
+	Node* N = make_node(v);
 	N->next = L->head;
 	L->head = N;
 	L->count++;
